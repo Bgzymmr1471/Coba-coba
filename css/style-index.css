@@ -1,0 +1,109 @@
+/* Gaya Dasar (Reset Sederhana) */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Warna latar belakang lembut */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Penataan Kontainer Utama */
+.container {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+}
+
+/* Header */
+header h1 {
+    color: #007bff; /* Warna biru cerah untuk judul */
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Bagian CTA (Call to Action) */
+.cta-section {
+    display: flex;
+    flex-direction: column; /* Tumpuk tombol secara vertikal */
+    gap: 20px; /* Jarak antar tombol */
+    margin-bottom: 40px;
+}
+
+/* Gaya Tombol CTA */
+.cta-button {
+    display: block;
+    padding: 20px;
+    text-decoration: none; /* Hilangkan garis bawah pada tautan */
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: transform 0.2s, box-shadow 0.2s;
+    line-height: 1.4;
+    text-align: left; /* Teks di dalam tombol rata kiri */
+}
+
+/* Hover effect */
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Varian Tombol Primer */
+.primary {
+    background-color: #007bff;
+    color: white;
+    border: 2px solid #007bff;
+}
+
+/* Varian Tombol Sekunder */
+.secondary {
+    background-color: #f0f0f0;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+
+/* Deskripsi di dalam Tombol */
+.description {
+    display: block; /* Pastikan deskripsi berada di baris baru */
+    font-weight: normal;
+    font-size: 0.9em;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+.secondary .description {
+    color: #555;
+}
+
+/* Footer */
+footer p {
+    font-size: 0.9em;
+    color: #aaa;
+    margin-top: 0;
+}
+
+/* Media Queries untuk Responsif (Jika layar lebih kecil dari 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .cta-button {
+        font-size: 1.1em;
+        padding: 15px;
+    }
+}
